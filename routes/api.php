@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\UsersController;
 use App\Http\Controllers\Api\SchoolController;
 use App\Http\Controllers\Api\DepartamentsController;
 use App\Http\Controllers\Api\CountriesController;
+use App\Http\Controllers\Api\ServicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +45,13 @@ Route::get('schools/{id}',[SchoolController::class,'show']);
 Route::post('schools',[SchoolController::class,'store']);
 Route::put('schools/{id}',[SchoolController::class,'update']);
 Route::delete('schools/{id}',[SchoolController::class,'destroy']);
+
+Route::get('solucion1/{id}',[ServicesController::class,'solucion1']);
+Route::get('solucion2/{id}',[ServicesController::class,'solucion2']);
+Route::get('solucion3/{id}',[ServicesController::class,'solucion3']);
+Route::get('solucion4/{id}',[ServicesController::class,'solucion4']);
+Route::get('solucion5/{id}',[ServicesController::class,'solucion5']);
+Route::get('solucion6/{search}',[ServicesController::class,'solucion6']);
+Route::get('solucion7/{id}',[ServicesController::class,'solucion7']);
+Route::get('solucion8/{id}',[ServicesController::class,'solucion8']);
+
